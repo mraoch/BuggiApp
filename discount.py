@@ -22,5 +22,4 @@ def apply_discount(price, percent):
         raise ValueError("discount percent must be between 0 and 100")
 
     multiplier = 1 - Decimal(percent) / 100
-    discounted_price = (price * multiplier).quantize(Decimal("0.01"))
-    return str(discounted_price)
+    return (price * multiplier).quantize(Decimal("0.01"))

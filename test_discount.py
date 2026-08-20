@@ -4,7 +4,7 @@ from discount import apply_discount
 
 
 def test_full_price_no_discount():
-    assert apply_discount("10.00", 0) == "10.00"
+    assert str(apply_discount("10.00", 0)) == "10.00"
 
 
 def test_half_price():
